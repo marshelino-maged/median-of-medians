@@ -9,7 +9,7 @@ public class RandomGenerator {
         int[] arr = new int[n];
         int i=0;
         while(i<n){
-            Integer num = ThreadLocalRandom.current().nextInt(-10000000, 10000000);
+            Integer num = ThreadLocalRandom.current().nextInt(-100000000, 100000000);
             if(!hash.contains(num)){
                 hash.add(num);
                 arr[i] = num;
